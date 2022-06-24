@@ -16,4 +16,8 @@ public class Probe extends UnmannedShip{
     public void landTheShip() {
         System.out.println("The Probe - UnnmannedShip: " + this.name + " has landed");
     }
+
+    public void goIntoOrbit(){
+        System.out.println("The Probe - UnnmannedShip: " + this.name + " is in Orbit");
+    }
 }
