@@ -1,14 +1,9 @@
 package paquete;
 
-public class UnmannedShip extends SpaceShip {
+public abstract class UnmannedShip extends SpaceShip {
 
-    @Override
-    public void launchTheShip() {
 
-    }
-
-    @Override
-    public void landTheShip() {
-
+    public UnmannedShip(String name) {
+        super(name);
     }
 }
