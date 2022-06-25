@@ -7,12 +7,12 @@ public class ExperimentationMissionShip extends MannedShip implements Communicat
     }
     @Override
     public void landTheShip() {
-        System.out.println("The Experimentation Mission - MannedShip: " + this.name + " has been launched");
+        System.out.println("The Experimentation Mission - MannedShip: " + this.name + " has landed");
     }
 
     @Override
     public void launchTheShip() {
-        System.out.println("The Experimentation Mission - MannedShip:" + this.name + " has landed");
+        System.out.println("The Experimentation Mission - MannedShip:" + this.name + " has been launched");
 
     }
 
