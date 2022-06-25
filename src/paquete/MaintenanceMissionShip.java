@@ -7,12 +7,16 @@ public class MaintenanceMissionShip extends MannedShip implements CommunicationT
     }
     @Override
     public void landTheShip() {
-        System.out.println("The Manteniance Mission - MannedShip: " + this.name + " has been launched");
+        this.speedingUp = false;
+        this.isActive = false;
+        System.out.println("The Manteniance Mission: " + this.name + " has been launched");
     }
 
     @Override
     public void launchTheShip() {
-        System.out.println("The Manteniance Mission - MannedShip:" + this.name + " has landed");
+        this.speedingUp = true;
+        this.isActive = true;
+        System.out.println("The Manteniance Mission: " + this.name + " has landed");
 
     }
 

@@ -8,12 +8,16 @@ public class LunarMissionShip extends MannedShip implements CommunicationTools, 
 
     @Override
     public void landTheShip() {
-        System.out.println("The Lunar Mission - MannedShip: " + this.name + " has been launched");
+        this.speedingUp = false;
+        this.isActive = false;
+        System.out.println("The Lunar Mission: " + this.name + " has been launched");
     }
 
     @Override
     public void launchTheShip() {
-        System.out.println("The Lunar Mission - MannedShip:" + this.name + " has landed");
+        this.speedingUp = true;
+        this.isActive = true;
+        System.out.println("The Lunar Mission: " + this.name + " has landed");
 
     }
 

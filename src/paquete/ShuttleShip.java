@@ -10,12 +10,14 @@ public class ShuttleShip extends SpaceShip {
     @Override
     public void launchTheShip() {
         this.speedingUp = true;
+        this.isActive = true;
         System.out.println("The ShuttleShip: " + this.name + " has been launched");
     }
 
     @Override
     public void landTheShip() {
         this.speedingUp = false;
+        this.isActive = false;
         System.out.println("The ShuttleShip: " + this.name + " has landed");
     }
 

@@ -3,7 +3,7 @@ package paquete;
 public abstract class SpaceShip {
     public String name;
     public boolean speedingUp;
-    public boolean inOrbit;
+    public boolean isActive;
 
     /*
     Constructor
@@ -11,7 +11,7 @@ public abstract class SpaceShip {
     public SpaceShip(String name){
         this.name = name;
         this.speedingUp = false;
-        this.inOrbit = false;
+        this.isActive = false;
     }
 
     /*

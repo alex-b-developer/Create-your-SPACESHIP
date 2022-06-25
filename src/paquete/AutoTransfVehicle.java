@@ -8,11 +8,15 @@ public class AutoTransfVehicle extends UnmannedShip implements ExplorationTools{
 
     @Override
     public void landTheShip() {
+        this.speedingUp = false;
+        this.isActive = false;
         System.out.println("The AutoTransVehicle - UnnmannedShip: " + this.name + " has been launched");
     }
 
     @Override
     public void launchTheShip() {
+        this.speedingUp = true;
+        this.isActive = true;
         System.out.println("The AutoTransVehicle - UnnmannedShip: " + this.name + " has landed");
 
     }
